@@ -56,7 +56,7 @@ const AddUser = (props) => {
           {/* if we use State to manage the value of these input fields then it's a controlled component */}
           <input type="text" id="username" ref={nameInputRef}></input>
           <label htmlFor="age">Age (Years)</label>
-          <input type="text" id="age" ref={ageInputRef}></input>
+          <input type="number" id="age" ref={ageInputRef}></input>
           <Button type="submit">Add User</Button>
         </form>
       </Card>
