@@ -11,10 +11,12 @@ function App() {
     })
   }
   return (
-    <div>
+    // react fragment, your project set-up needs to support it
+    // Another option is use <React.Fragment></React.Fragment>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UserList users={userList} />
-    </div>
+    </>
   )
 }
 
