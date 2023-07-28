@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import AddUser from './Component/Users/AddUser'
 import UserList from './Component/Users/UserList'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   const [userList, setUserList] = useState([])
@@ -14,12 +15,21 @@ function App() {
     })
   }
   return (
-    // react fragment, your project set-up needs to support it
-    // Another option is use <React.Fragment></React.Fragment>
-    <>
-      <AddUser onAddUser={addUserHandler} />
-      <UserList users={userList} />
-    </>
+    <HashRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            // react fragment, your project set-up needs to support it
+            // Another option is use <React.Fragment></React.Fragment>
+            <>
+              <AddUser onAddUser={addUserHandler} />
+              <UserList users={userList} />
+            </>
+          }
+        />
+      </Routes>
+    </HashRouter>
   )
 }
 
