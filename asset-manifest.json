@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/karencardoz/manage-users/static/css/main.659ab1ed.css",
-    "main.js": "/karencardoz/manage-users/static/js/main.3f1de7a9.js",
-    "index.html": "/karencardoz/manage-users/index.html",
-    "main.659ab1ed.css.map": "/karencardoz/manage-users/static/css/main.659ab1ed.css.map",
-    "main.3f1de7a9.js.map": "/karencardoz/manage-users/static/js/main.3f1de7a9.js.map"
+    "main.css": "./static/css/main.659ab1ed.css",
+    "main.js": "./static/js/main.9e18c652.js",
+    "index.html": "./index.html",
+    "main.659ab1ed.css.map": "./static/css/main.659ab1ed.css.map",
+    "main.9e18c652.js.map": "./static/js/main.9e18c652.js.map"
   },
   "entrypoints": [
     "static/css/main.659ab1ed.css",
-    "static/js/main.3f1de7a9.js"
+    "static/js/main.9e18c652.js"
   ]
 }
