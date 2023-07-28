@@ -52,6 +52,8 @@ const AddUser = (props) => {
         <form onSubmit={addUserHandler}>
           {/* htmlFor important for screen readers */}
           <label htmlFor="username">Username</label>
+          {/* Uncontrolled components as we're using useRef, because their value is not controlled by React */}
+          {/* if we use State to manage the value of these input fields then it's a controlled component */}
           <input type="text" id="username" ref={nameInputRef}></input>
           <label htmlFor="age">Age (Years)</label>
           <input type="text" id="age" ref={ageInputRef}></input>
