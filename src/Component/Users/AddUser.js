@@ -52,21 +52,9 @@ const AddUser = (props) => {
         <form onSubmit={addUserHandler}>
           {/* htmlFor important for screen readers */}
           <label htmlFor="username">Username</label>
-          <input
-            type="text"
-            id="username"
-            // value={enteredUsername}
-            // onChange={userNameChangeHandler}
-            ref={nameInputRef}
-          ></input>
+          <input type="text" id="username" ref={nameInputRef}></input>
           <label htmlFor="age">Age (Years)</label>
-          <input
-            type="text"
-            // value={enteredAge}
-            id="age"
-            // onChange={ageChangeHandler}
-            ref={ageInputRef}
-          ></input>
+          <input type="text" id="age" ref={ageInputRef}></input>
           <Button type="submit">Add User</Button>
         </form>
       </Card>
